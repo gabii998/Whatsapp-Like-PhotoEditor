@@ -10,7 +10,7 @@ android {
       commandLine 'ndk-build.cmd', '-j', Runtime.runtime.availableProcessors()
     } else {
       workingDir 'src/main/jni'
-      commandLine "$ndkDir/ndk-build", '-j', Runtime.runtime.availableProcessors()
+      commandLine "$ndkDir", '-j', Runtime.runtime.availableProcessors()
     }
   }
 

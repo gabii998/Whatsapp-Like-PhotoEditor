@@ -22,6 +22,11 @@ android {
       path "src/main/jni/Android.mk"
     }
   }
+  
+  sourceSets.main {
+    jni.srcDirs = []
+    jniLibs.srcDir 'src/main/libs'
+  }
 
   buildTypes {
     release {
